@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/site.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index Page</title>
+</head>
+<body>
+    @model MyModel
+    <form asp-action="Create" asp-controller="Home" method="post" class="contain">
+        <div class="form-group">
+            <span asp-validation-for="FirstName"></span>
+            <label asp-for="FirstName"></label>
+            <input asp-for="FirstName">
+        </div>
+
+        <div class="form-group">
+            <span asp-validation-for="LastName"></span>
+            <label asp-for="LastName"></label>
+            <input asp-for="LastName">
+        </div>
+
+        <div class="form-group">
+            <span asp-validation-for="Age"></span>
+            <label asp-for="Age"></label>
+            <input asp-for="Age">
+        </div>
+
+        <div class="form-group">
+            <span asp-validation-for="Email"></span>
+            <label asp-for="Email"></label>
+            <input asp-for="Email">
+        </div>
+
+        <div class="form-group">
+            <span asp-validation-for="Password"></span>
+            <label asp-for="Password"></label>
+            <input asp-for="Password">
+        </div>
+
+        <button class="btn btn-primary">Sumbit</button>
+    </form>
+</body>
+</html>
