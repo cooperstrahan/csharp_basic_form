@@ -3,6 +3,20 @@ using System.ComponentModel.DataAnnotations;
 
 namespace FormSubmission.Models
 {
+    public class FutureDateAttribute : ValidationAttribute
+    {
+        protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+        {
+            if((DateTime)value < DateTime.Today)
+            {
+                return new ValidationResult("You may not enter a previous day's date");
+            }
+            else
+            {
+                return ValidationResult.Success;
+            }
+        }
+    }
     public class MyModel
     {
         [Required]
@@ -25,6 +39,10 @@ namespace FormSubmission.Models
         [DataType(DataType.Password)]
         [MinLength(8)]
         public string Password {get; set;}
+
+        [Required]
+        [FutureDate]
+        public DateTime Date {get; set;}
 
     }
 }

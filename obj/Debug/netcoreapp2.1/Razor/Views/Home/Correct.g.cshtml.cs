@@ -54,7 +54,7 @@ using FormSubmission.Models;
             WriteLiteral("<!DOCTYPE html>\n<html lang=\"en\">\n");
             EndContext();
             BeginContext(33, 201, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "95c0c323e1c54e0da74f0c9f6285804c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a9f1c14ac084926a0c5c7fddc489c53", async() => {
                 BeginContext(39, 188, true);
                 WriteLiteral("\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Success</title>\n");
                 EndContext();
@@ -74,7 +74,7 @@ using FormSubmission.Models;
             WriteLiteral("\n");
             EndContext();
             BeginContext(235, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a20c09ab9a1a4699bd5b7dc341f9d71d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6e676d8e2a7f426082430824fab6c9c7", async() => {
                 BeginContext(241, 51, true);
                 WriteLiteral("\n    <h1>You hace correctly submitted a form!</h1>\n");
                 EndContext();
